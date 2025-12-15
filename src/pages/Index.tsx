@@ -35,6 +35,13 @@ const Index = () => {
     <Layout>
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-hero-pattern">
+        {/* PLACEHOLDER IMAGE: Hero Background - Abstract Futuristic */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: `url('https://images.unsplash.com/photo-1557683316-973673baf926?w=1920&q=80')` }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/95 via-background/80 to-background" />
+        
         <FloatingShapes variant="hero" />
         
         {/* Subtle grid pattern */}
@@ -101,6 +108,18 @@ const Index = () => {
 
         {/* Bottom gradient fade */}
         <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent" />
+      </section>
+
+      {/* Section Divider - PLACEHOLDER IMAGE */}
+      <section className="relative h-64 lg:h-80 overflow-hidden">
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: `url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1920&q=80')` }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/80 to-primary/60" />
+        <div className="absolute inset-0 flex items-center justify-center">
+          <p className="text-primary-foreground/60 text-sm font-medium tracking-wider uppercase">PLACEHOLDER IMAGE: Section Divider - Fabric Texture</p>
+        </div>
       </section>
 
       {/* About Section */}
@@ -200,9 +219,19 @@ const Index = () => {
             {coreValues.map((value, index) => (
               <GlassCard
                 key={value.title}
-                className="p-6 text-center"
+                className="p-6 text-center overflow-hidden"
                 delay={index * 0.1}
               >
+                {/* PLACEHOLDER IMAGE: Value Card */}
+                <div className="relative w-full h-32 -mx-6 -mt-6 mb-5 overflow-hidden">
+                  <img 
+                    src={`https://images.unsplash.com/photo-${['1635070041078-e363dbe005cb', '1618005182384-a83a8bd57fbe', '1557683316-973673baf926', '1579547621113-e4bb2a19bdd6'][index]}?w=400&q=80`}
+                    alt="PLACEHOLDER"
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-white via-white/50 to-transparent" />
+                  <span className="absolute top-2 left-2 text-[10px] bg-primary/80 text-white px-2 py-0.5 rounded">PLACEHOLDER</span>
+                </div>
                 <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-primary/10 mb-5">
                   <value.icon className="w-7 h-7 text-primary" />
                 </div>
