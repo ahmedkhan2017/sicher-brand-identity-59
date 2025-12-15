@@ -23,15 +23,13 @@ const Quality = () => {
 
   return (
     <Layout>
-      {/* Hero with PLACEHOLDER IMAGE */}
+      {/* Hero */}
       <section className="relative py-32 lg:py-40 overflow-hidden bg-hero-pattern">
-        {/* PLACEHOLDER IMAGE: Abstract Background */}
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{ backgroundImage: `url('https://images.unsplash.com/photo-1620121692029-d088224ddc74?w=1920&q=80')` }}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-background/95 via-background/85 to-background" />
-        <span className="absolute top-4 left-4 text-xs bg-primary/80 text-white px-3 py-1 rounded z-10">PLACEHOLDER IMAGE: Abstract Background</span>
         
         <FloatingShapes variant="hero" />
         <div className="container relative mx-auto px-6 lg:px-8">
@@ -63,15 +61,13 @@ const Quality = () => {
       </section>
 
       <section className="py-24 lg:py-32 bg-section-gradient relative overflow-hidden">
-        {/* PLACEHOLDER IMAGE: Section Illustration */}
         <div className="absolute left-0 top-0 bottom-0 w-1/4 hidden lg:block overflow-hidden">
           <img 
             src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80"
-            alt="PLACEHOLDER"
+            alt="Quality fabric texture"
             className="w-full h-full object-cover opacity-15"
           />
           <div className="absolute inset-0 bg-gradient-to-l from-section-gradient to-transparent" />
-          <span className="absolute top-4 left-4 text-xs bg-primary/80 text-white px-3 py-1 rounded">PLACEHOLDER</span>
         </div>
         
         <div className="container relative mx-auto px-6 lg:px-8">
