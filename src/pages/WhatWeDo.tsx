@@ -39,6 +39,14 @@ const WhatWeDo = () => {
     <Layout>
       {/* Hero */}
       <section className="relative py-32 lg:py-40 overflow-hidden bg-hero-pattern">
+        {/* PLACEHOLDER IMAGE: Conceptual Background */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: `url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1920&q=80')` }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/95 via-background/85 to-background" />
+        <span className="absolute top-4 left-4 text-xs bg-primary/80 text-white px-3 py-1 rounded z-10">PLACEHOLDER IMAGE: Conceptual Background</span>
+        
         <FloatingShapes variant="hero" />
         
         <div className="container relative mx-auto px-6 lg:px-8">
@@ -64,7 +72,17 @@ const WhatWeDo = () => {
         <div className="container relative mx-auto px-6 lg:px-8">
           <div className="grid md:grid-cols-3 gap-8">
             {services.map((service, index) => (
-              <GlassCard key={service.title} className="p-8 text-center" delay={index * 0.15}>
+              <GlassCard key={service.title} className="p-8 text-center overflow-hidden" delay={index * 0.15}>
+                {/* PLACEHOLDER IMAGE: Service Card */}
+                <div className="relative w-full h-40 -mx-8 -mt-8 mb-6 overflow-hidden">
+                  <img 
+                    src={`https://images.unsplash.com/photo-${['1586528116022-a0f77d129b44', '1578575437130-527eed3abbec', '1494412574643-ff11b0a5c1c3'][index]}?w=500&q=80`}
+                    alt="PLACEHOLDER"
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-white via-white/60 to-transparent" />
+                  <span className="absolute top-2 left-2 text-[10px] bg-primary/80 text-white px-2 py-0.5 rounded">PLACEHOLDER</span>
+                </div>
                 <motion.div 
                   className="inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-blue-gradient mb-6 shadow-blue"
                   whileHover={{ scale: 1.05, rotate: 5 }}
