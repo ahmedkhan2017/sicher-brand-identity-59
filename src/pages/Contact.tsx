@@ -48,13 +48,11 @@ const Contact = () => {
     <Layout>
       {/* Hero */}
       <section className="relative py-32 lg:py-40 overflow-hidden bg-hero-pattern">
-        {/* PLACEHOLDER IMAGE: Subtle Background */}
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{ backgroundImage: `url('https://images.unsplash.com/photo-1497366216548-37526070297c?w=1920&q=80')` }}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-background/98 via-background/90 to-background" />
-        <span className="absolute top-4 left-4 text-xs bg-primary/80 text-white px-3 py-1 rounded z-10">PLACEHOLDER IMAGE: Subtle Background</span>
         
         <FloatingShapes variant="hero" />
         
@@ -175,16 +173,14 @@ const Contact = () => {
         </div>
       </section>
 
-      {/* Map Placeholder */}
+      {/* Location Section */}
       <section className="relative h-80 lg:h-[400px] overflow-hidden">
-        {/* PLACEHOLDER IMAGE: Map/Location Background */}
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{ backgroundImage: `url('https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1920&q=80')` }}
         />
         <div className="absolute inset-0 bg-gradient-to-br from-primary/70 via-primary/50 to-accent/60" />
-        <span className="absolute top-4 left-4 text-xs bg-white/80 text-primary px-3 py-1 rounded z-10">PLACEHOLDER IMAGE: Location/Map</span>
-        <div 
+        <div
           className="absolute inset-0 opacity-5"
           style={{
             backgroundImage: `linear-gradient(hsl(var(--primary)) 1px, transparent 1px),

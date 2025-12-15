@@ -25,13 +25,11 @@ const About = () => {
     <Layout>
       {/* Hero */}
       <section className="relative py-32 lg:py-40 overflow-hidden bg-hero-pattern">
-        {/* PLACEHOLDER IMAGE: Header Background - Modern Architecture */}
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{ backgroundImage: `url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&q=80')` }}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-background/95 via-background/85 to-background" />
-        <span className="absolute top-4 left-4 text-xs bg-primary/80 text-white px-3 py-1 rounded z-10">PLACEHOLDER IMAGE: Header Background</span>
         
         <FloatingShapes variant="hero" />
         
@@ -74,15 +72,13 @@ const About = () => {
 
       {/* Mission & Vision */}
       <section className="py-24 lg:py-32 bg-section-gradient relative overflow-hidden">
-        {/* PLACEHOLDER IMAGE: Decorative Side Image */}
         <div className="absolute right-0 top-0 bottom-0 w-1/3 hidden lg:block overflow-hidden">
           <img 
             src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=800&q=80"
-            alt="PLACEHOLDER"
+            alt="Decorative abstract background"
             className="w-full h-full object-cover opacity-20"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-section-gradient to-transparent" />
-          <span className="absolute top-4 right-4 text-xs bg-primary/80 text-white px-3 py-1 rounded">PLACEHOLDER: Decorative</span>
         </div>
         
         <div className="container relative mx-auto px-6 lg:px-8">

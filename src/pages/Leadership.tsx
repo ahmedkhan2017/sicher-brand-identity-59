@@ -9,13 +9,11 @@ const Leadership = () => {
     <Layout>
       {/* Hero */}
       <section className="relative py-32 lg:py-40 overflow-hidden bg-hero-pattern">
-        {/* PLACEHOLDER IMAGE: Leadership Background */}
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{ backgroundImage: `url('https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=1920&q=80')` }}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-background/95 via-background/85 to-background" />
-        <span className="absolute top-4 left-4 text-xs bg-primary/80 text-white px-3 py-1 rounded z-10">PLACEHOLDER IMAGE: Leadership Background</span>
         
         <FloatingShapes variant="hero" />
         
@@ -42,7 +40,6 @@ const Leadership = () => {
         <div className="container relative mx-auto px-6 lg:px-8">
           <div className="max-w-3xl mx-auto">
             <GlassCard className="p-10 lg:p-16 text-center">
-              {/* PLACEHOLDER IMAGE: Portrait */}
               <motion.div 
                 className="relative w-40 h-40 rounded-3xl overflow-hidden mb-8 shadow-soft-lg mx-auto"
                 whileHover={{ scale: 1.05 }}
@@ -50,11 +47,10 @@ const Leadership = () => {
               >
                 <img 
                   src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80"
-                  alt="PLACEHOLDER: CEO Portrait"
+                  alt="CEO Portrait"
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent" />
-                <span className="absolute bottom-2 left-2 text-[10px] bg-primary/80 text-white px-2 py-0.5 rounded">PLACEHOLDER</span>
               </motion.div>
               <h2 className="text-3xl font-bold text-foreground">Founder & CEO</h2>
               <p className="mt-2 inline-block px-4 py-1 rounded-full bg-primary/10 text-primary font-medium text-sm">
