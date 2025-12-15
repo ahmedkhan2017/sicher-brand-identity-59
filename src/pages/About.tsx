@@ -1,5 +1,9 @@
 import Layout from "@/components/layout/Layout";
+import AnimatedSection from "@/components/ui/AnimatedSection";
+import FloatingShapes from "@/components/ui/FloatingShapes";
+import GlassCard from "@/components/ui/GlassCard";
 import { Target, Eye, Heart, Users, Globe, Shield, Lightbulb, Award } from "lucide-react";
+import { motion } from "framer-motion";
 
 const About = () => {
   const values = [
@@ -20,110 +24,159 @@ const About = () => {
   return (
     <Layout>
       {/* Hero */}
-      <section className="py-20 lg:py-28 bg-background">
-        <div className="container mx-auto px-6 lg:px-8">
-          <div className="max-w-3xl mx-auto text-center animate-fade-in-up">
-            <h1 className="text-4xl md:text-5xl font-semibold text-foreground tracking-tight">
-              About Sicher
-            </h1>
-            <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
-              We are a premium import and export company built on trust, quality, and a commitment to excellence in global apparel trade.
-            </p>
-          </div>
+      <section className="relative py-32 lg:py-40 overflow-hidden bg-hero-pattern">
+        <FloatingShapes variant="hero" />
+        
+        {/* Abstract Background Image Placeholder */}
+        <div className="absolute inset-0 opacity-5">
+          <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-primary rounded-full blur-3xl" />
+          <div className="absolute bottom-1/4 left-1/4 w-80 h-80 bg-accent rounded-full blur-3xl" />
+        </div>
+        
+        <div className="container relative mx-auto px-6 lg:px-8">
+          <AnimatedSection>
+            <div className="max-w-3xl mx-auto text-center">
+              <span className="inline-block text-sm font-semibold text-primary uppercase tracking-wider mb-4">
+                Our Story
+              </span>
+              <h1 className="text-4xl md:text-6xl font-bold text-foreground tracking-tight">
+                About Sicher
+              </h1>
+              <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
+                We are a premium import and export company built on trust, quality, and a commitment to excellence in global apparel trade.
+              </p>
+            </div>
+          </AnimatedSection>
         </div>
       </section>
 
       {/* Company Overview */}
-      <section className="py-20 lg:py-28 bg-secondary">
-        <div className="container mx-auto px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-semibold text-foreground text-center mb-8">Company Overview</h2>
-            <p className="text-muted-foreground leading-relaxed text-center">
-              Sicher is a Dubai-based import and export company specializing in premium clothing and apparel. Founded with a commitment to quality and ethical business practices, we have grown to become a trusted partner for businesses seeking reliable sourcing and distribution of fashion garments, jackets, and outerwear. Our team brings together expertise in international trade, quality assurance, and logistics to deliver exceptional service to our clients worldwide.
-            </p>
-          </div>
+      <section className="py-24 lg:py-32 bg-background relative overflow-hidden">
+        <FloatingShapes variant="subtle" />
+        <div className="container relative mx-auto px-6 lg:px-8">
+          <AnimatedSection>
+            <div className="max-w-4xl mx-auto">
+              <GlassCard className="p-10 lg:p-16">
+                <span className="inline-block text-sm font-semibold text-primary uppercase tracking-wider mb-4">
+                  Who We Are
+                </span>
+                <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">Company Overview</h2>
+                <p className="text-lg text-muted-foreground leading-relaxed">
+                  Sicher is a Dubai-based import and export company specializing in premium clothing and apparel. Founded with a commitment to quality and ethical business practices, we have grown to become a trusted partner for businesses seeking reliable sourcing and distribution of fashion garments, jackets, and outerwear. Our team brings together expertise in international trade, quality assurance, and logistics to deliver exceptional service to our clients worldwide.
+                </p>
+              </GlassCard>
+            </div>
+          </AnimatedSection>
         </div>
       </section>
 
       {/* Mission & Vision */}
-      <section className="py-20 lg:py-28 bg-background">
-        <div className="container mx-auto px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 gap-12 lg:gap-16 max-w-5xl mx-auto">
-            <div className="bg-secondary rounded-lg p-8 lg:p-10">
-              <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-accent/10 mb-6">
-                <Target className="w-7 h-7 text-accent" />
+      <section className="py-24 lg:py-32 bg-section-gradient relative overflow-hidden">
+        <div className="container relative mx-auto px-6 lg:px-8">
+          <div className="grid md:grid-cols-2 gap-8 lg:gap-12 max-w-5xl mx-auto">
+            <GlassCard className="p-8 lg:p-10" delay={0.1}>
+              <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-blue-gradient mb-6">
+                <Target className="w-8 h-8 text-primary-foreground" />
               </div>
-              <h3 className="text-2xl font-semibold text-foreground">Mission Statement</h3>
+              <h3 className="text-2xl font-bold text-foreground">Mission Statement</h3>
               <p className="mt-4 text-muted-foreground leading-relaxed">
                 To deliver exceptional quality apparel through reliable import and export services, fostering trust and long-term partnerships with our clients. We strive to exceed expectations by maintaining the highest standards in sourcing, quality control, and customer service.
               </p>
-            </div>
-            <div className="bg-secondary rounded-lg p-8 lg:p-10">
-              <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-primary/10 mb-6">
-                <Eye className="w-7 h-7 text-primary" />
+            </GlassCard>
+            
+            <GlassCard className="p-8 lg:p-10" delay={0.2}>
+              <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br from-accent to-primary/70 mb-6">
+                <Eye className="w-8 h-8 text-primary-foreground" />
               </div>
-              <h3 className="text-2xl font-semibold text-foreground">Vision Statement</h3>
+              <h3 className="text-2xl font-bold text-foreground">Vision Statement</h3>
               <p className="mt-4 text-muted-foreground leading-relaxed">
                 To become the most trusted name in global apparel trade, setting industry standards for quality, reliability, and ethical business practices. We envision a world where trade is seamless, sustainable, and built on mutual respect.
               </p>
-            </div>
+            </GlassCard>
           </div>
         </div>
       </section>
 
       {/* Our Values */}
-      <section className="py-20 lg:py-28 bg-secondary">
-        <div className="container mx-auto px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-semibold text-foreground tracking-tight">
-              Our Values
-            </h2>
-            <p className="mt-4 text-muted-foreground">
-              The principles that define who we are
-            </p>
-          </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            {values.map((value) => (
-              <div key={value.title} className="flex items-start gap-4 p-6 bg-background rounded-lg">
-                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center">
-                  <value.icon className="w-5 h-5 text-accent" />
+      <section className="py-24 lg:py-32 bg-background relative overflow-hidden">
+        <FloatingShapes variant="section" />
+        <div className="container relative mx-auto px-6 lg:px-8">
+          <AnimatedSection>
+            <div className="text-center mb-16">
+              <span className="inline-block text-sm font-semibold text-primary uppercase tracking-wider mb-4">
+                What We Stand For
+              </span>
+              <h2 className="text-3xl md:text-5xl font-bold text-foreground tracking-tight">
+                Our Values
+              </h2>
+              <p className="mt-4 text-muted-foreground text-lg">
+                The principles that define who we are
+              </p>
+            </div>
+          </AnimatedSection>
+          
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            {values.map((value, index) => (
+              <GlassCard key={value.title} className="p-6" delay={index * 0.1}>
+                <div className="flex items-start gap-4">
+                  <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
+                    <value.icon className="w-6 h-6 text-primary" />
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-foreground">{value.title}</h3>
+                    <p className="mt-1 text-sm text-muted-foreground">{value.description}</p>
+                  </div>
                 </div>
-                <div>
-                  <h3 className="font-semibold text-foreground">{value.title}</h3>
-                  <p className="mt-1 text-sm text-muted-foreground">{value.description}</p>
-                </div>
-              </div>
+              </GlassCard>
             ))}
           </div>
         </div>
       </section>
 
       {/* Company Story Timeline */}
-      <section className="py-20 lg:py-28 bg-background">
-        <div className="container mx-auto px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-semibold text-foreground tracking-tight">
-              Our Journey
-            </h2>
-          </div>
+      <section className="py-24 lg:py-32 bg-section-gradient relative overflow-hidden">
+        <div className="container relative mx-auto px-6 lg:px-8">
+          <AnimatedSection>
+            <div className="text-center mb-16">
+              <span className="inline-block text-sm font-semibold text-primary uppercase tracking-wider mb-4">
+                Our History
+              </span>
+              <h2 className="text-3xl md:text-5xl font-bold text-foreground tracking-tight">
+                Our Journey
+              </h2>
+            </div>
+          </AnimatedSection>
+          
           <div className="max-w-3xl mx-auto">
-            <div className="space-y-8">
+            <div className="space-y-0">
               {timeline.map((item, index) => (
-                <div key={item.year} className="flex gap-6">
+                <motion.div
+                  key={item.year}
+                  initial={{ opacity: 0, x: -20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: index * 0.2 }}
+                  className="flex gap-6"
+                >
                   <div className="flex flex-col items-center">
-                    <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-primary-foreground font-semibold text-sm">
+                    <motion.div 
+                      className="w-14 h-14 rounded-2xl bg-blue-gradient flex items-center justify-center text-primary-foreground font-bold text-sm shadow-blue"
+                      whileHover={{ scale: 1.1 }}
+                    >
                       {String(index + 1).padStart(2, '0')}
-                    </div>
+                    </motion.div>
                     {index < timeline.length - 1 && (
-                      <div className="w-px h-full bg-border mt-4" />
+                      <div className="w-0.5 h-24 bg-gradient-to-b from-primary/50 to-transparent mt-4" />
                     )}
                   </div>
-                  <div className="pb-8">
-                    <span className="text-sm font-medium text-accent">{item.year}</span>
-                    <h3 className="text-xl font-semibold text-foreground mt-1">{item.title}</h3>
+                  <div className="pb-12 pt-1">
+                    <span className="inline-block px-3 py-1 rounded-full bg-primary/10 text-xs font-semibold text-primary mb-2">
+                      {item.year}
+                    </span>
+                    <h3 className="text-xl font-bold text-foreground">{item.title}</h3>
                     <p className="mt-2 text-muted-foreground">{item.description}</p>
                   </div>
-                </div>
+                </motion.div>
               ))}
             </div>
           </div>
