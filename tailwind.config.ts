@@ -14,7 +14,7 @@ export default {
     },
     extend: {
       fontFamily: {
-        sans: ["Inter", "system-ui", "sans-serif"],
+        sans: ["Inter", "Helvetica Neue", "system-ui", "sans-serif"],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -50,11 +50,10 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        blue: {
-          primary: "hsl(var(--blue-primary))",
-          secondary: "hsl(var(--blue-secondary))",
-          light: "hsl(var(--blue-light))",
-          muted: "hsl(var(--blue-muted))",
+        silver: {
+          DEFAULT: "hsl(var(--silver))",
+          light: "hsl(var(--silver-light))",
+          dark: "hsl(var(--silver-dark))",
         },
       },
       borderRadius: {
@@ -66,11 +65,11 @@ export default {
         "3xl": "2rem",
       },
       boxShadow: {
-        'glow': '0 0 40px hsl(var(--primary) / 0.15)',
-        'glow-lg': '0 0 60px hsl(var(--primary) / 0.2)',
-        'soft': '0 4px 20px rgba(0, 0, 0, 0.05)',
-        'soft-lg': '0 8px 40px rgba(0, 0, 0, 0.08)',
-        'blue': '0 10px 40px hsl(230 100% 52% / 0.15)',
+        'glow': '0 0 40px hsl(0 0% 75% / 0.15)',
+        'glow-lg': '0 0 60px hsl(0 0% 75% / 0.2)',
+        'soft': '0 4px 20px rgba(255, 255, 255, 0.05)',
+        'soft-lg': '0 8px 40px rgba(255, 255, 255, 0.08)',
+        'silver': '0 10px 40px hsl(0 0% 75% / 0.15)',
       },
       keyframes: {
         "accordion-down": {
@@ -124,9 +123,9 @@ export default {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-        'hero-pattern': 'radial-gradient(ellipse at top, hsl(210 60% 98%) 0%, hsl(220 50% 96%) 50%, hsl(0 0% 100%) 100%)',
-        'section-gradient': 'linear-gradient(180deg, hsl(210 40% 97%) 0%, hsl(0 0% 100%) 100%)',
-        'blue-gradient': 'linear-gradient(135deg, hsl(230 100% 52%) 0%, hsl(207 70% 60%) 100%)',
+        'hero-pattern': 'radial-gradient(ellipse at top, hsl(0 0% 5%) 0%, hsl(0 0% 0%) 100%)',
+        'section-gradient': 'linear-gradient(180deg, hsl(0 0% 3%) 0%, hsl(0 0% 0%) 100%)',
+        'silver-gradient': 'linear-gradient(135deg, hsl(0 0% 75%) 0%, hsl(0 0% 60%) 100%)',
       },
     },
   },
