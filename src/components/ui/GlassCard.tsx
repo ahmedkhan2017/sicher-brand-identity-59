@@ -18,8 +18,8 @@ const GlassCard = ({ children, className = "", hover = true, delay = 0 }: GlassC
       transition={{ duration: 0.5, delay }}
       whileHover={hover ? { y: -8, transition: { duration: 0.3 } } : undefined}
       className={cn(
-        "bg-white/80 backdrop-blur-lg border border-white/40 rounded-2xl shadow-soft",
-        hover && "transition-shadow duration-300 hover:shadow-soft-lg",
+        "bg-black/40 backdrop-blur-lg border border-silver/20 rounded-2xl shadow-soft",
+        hover && "transition-shadow duration-300 hover:shadow-glow",
         className
       )}
     >

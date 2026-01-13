@@ -7,16 +7,16 @@ interface FloatingShapesProps {
 const FloatingShapes = ({ variant = "hero" }: FloatingShapesProps) => {
   const shapes = {
     hero: [
-      { size: "w-96 h-96", position: "top-20 -right-48", color: "bg-primary/10", delay: 0 },
-      { size: "w-80 h-80", position: "-bottom-40 -left-40", color: "bg-accent/15", delay: 2 },
-      { size: "w-64 h-64", position: "top-1/2 left-1/4", color: "bg-blue-secondary/10", delay: 4 },
+      { size: "w-96 h-96", position: "top-20 -right-48", color: "bg-white/5", delay: 0 },
+      { size: "w-80 h-80", position: "-bottom-40 -left-40", color: "bg-silver/10", delay: 2 },
+      { size: "w-64 h-64", position: "top-1/2 left-1/4", color: "bg-white/3", delay: 4 },
     ],
     section: [
-      { size: "w-72 h-72", position: "top-10 right-10", color: "bg-primary/5", delay: 0 },
-      { size: "w-56 h-56", position: "bottom-10 left-10", color: "bg-accent/10", delay: 1 },
+      { size: "w-72 h-72", position: "top-10 right-10", color: "bg-silver/5", delay: 0 },
+      { size: "w-56 h-56", position: "bottom-10 left-10", color: "bg-white/5", delay: 1 },
     ],
     subtle: [
-      { size: "w-48 h-48", position: "top-20 right-20", color: "bg-primary/5", delay: 0 },
+      { size: "w-48 h-48", position: "top-20 right-20", color: "bg-silver/5", delay: 0 },
     ],
   };
 
